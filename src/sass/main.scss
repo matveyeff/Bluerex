@@ -1,0 +1,81 @@
+@import './layout/vars';
+@import './layout/libs';
+@import './layout/base';
+@import './layout/fonts';
+
+.logo {
+	width: 69px;
+	height: 62px;
+}
+
+.main-header {
+	background: url(../img/bg-main.jpg) center / cover no-repeat;
+	height: 100vh;
+	min-height: 600px;
+	position: relative;
+	.navbar-brand {
+		font-size: 41px;
+		font-weight: 600;
+		color: #fff;
+	}
+	ul li a {
+		font-size: 17px;
+		font-weight: 600;
+		color: #fff;
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			background-color: #fff;
+			height: 1px;
+			transform: scale(0);
+			transition: transform .2s cubic-bezier(.64,.28,.48,.99);
+		}
+		&:hover {
+			&::after {
+				transform: scale(1);
+			}
+		}
+	}
+}
+
+.main-header-text {
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	max-width: 600px;
+	color: #fff;
+	padding: 20px;
+}
+
+.main-header-buttons {
+	padding-left: 30px;
+	.btn {
+		padding: 18px 40px;
+		margin-right: 20px;
+		opacity: .8;
+		margin-top: 30px;
+		box-shadow: 0 4px 16px rgba(0,0,0,.35);
+		transition: opacity .2s cubic-bezier(.64,.28,.48,.99);
+		&:hover {
+			color: #fff;
+			opacity: 1;
+		}
+	}
+}
+
+.btn {
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.btn-pink {
+	background-color: #f42276;
+}
+
+.btn-violet {
+	background-color: #69328e;
+}
