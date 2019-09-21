@@ -3,6 +3,12 @@
 @import './layout/base';
 @import './layout/fonts';
 
+button:active, button:focus {
+  outline: none;
+}
+
+/* ============================= Header ============================== */
+
 .logo {
 	width: 69px;
 	height: 62px;
@@ -11,8 +17,11 @@
 .main-header {
 	background: url(../img/bg-main.jpg) center / cover no-repeat;
 	height: 100vh;
-	min-height: 600px;
+	min-height: 700px;
 	position: relative;
+	.navbar-toggler {
+		color: #fff;
+	}
 	.navbar-brand {
 		font-size: 41px;
 		font-weight: 600;
@@ -39,10 +48,10 @@
 	}
 }
 
-.main-header-text {
+.main-header-content {
 	position: absolute;
 	top: 25%;
-	left: 5%;
+	left: 15%;
 	max-width: 600px;
 	color: #fff;
 	padding: 20px;
@@ -78,4 +87,98 @@
 
 .btn-violet {
 	background-color: #69328e;
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.main-header {
+		ul li a {
+			&::after {
+				display: none;
+			}
+		}
+	}
+	.main-header-content {
+		background-color: rgba(0,0,0,.2);
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.navbar-nav {
+		background: linear-gradient(45deg, rgba(237, 27, 51, 1) 0%,rgba(68, 46, 130, .8) 100%);
+		position: relative;
+		z-index: 1;
+		padding: 0 15px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.main-header-content {
+		left: 0;
+		margin: 0 20px;
+		max-width: 100%;
+	}
+	.main-header-text {
+		h3 {
+			font-size: 36px;
+		}
+		h4 {
+			font-size: 38px;
+		}
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.main-header-content {
+		top: 90px;
+	}
+	.main-header-buttons {
+		padding: 0;
+		.btn {
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-header-text {
+		text-align: center;
+		h3 {
+			font-size: 30px;
+		}
+		h4 {
+			font-size: 32px;
+		}
+	}
+}
+
+@media only screen and (max-width : 380px) {
+	.main-header {
+		.navbar-brand {
+			font-size: 30px;
+		}
+	}
+	.main-header-text {
+		text-align: center;
+		h3 {
+			font-size: 22px;
+		}
+		h4 {
+			font-size: 32px;
+		}
+	}
 }
