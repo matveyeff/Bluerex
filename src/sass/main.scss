@@ -146,6 +146,9 @@ button:active, button:focus {
 	.main-header-content {
 		background-color: rgba(0,0,0,.2);
 	}
+	section {
+		padding: 50px 0;
+	}
 }
 
 @media only screen and (max-width : 991px) {
@@ -189,6 +192,9 @@ button:active, button:focus {
 			}
 		}
 	}
+	.btn-shadow {
+		padding: 10px 15px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -201,6 +207,13 @@ button:active, button:focus {
 		h4 {
 			font-size: 32px;
 		}
+	}
+	.section-watch .nav-pills .nav-item {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.section-watch .nav-pills .nav-link {
+		padding: 8px 16px;
 	}
 }
 
