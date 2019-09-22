@@ -89,6 +89,44 @@ button:active, button:focus {
 	background-color: #69328e;
 }
 
+/* ============================= section Watch ============================== */
+
+.section-watch {
+	background: url(../img/world-map.png) center / cover no-repeat;
+	h3, h4 {
+		color: #484848;
+	}
+	.nav-pills {
+		margin-bottom: 20px;
+	}
+	.nav-link {
+		font-size: 13px;
+		font-weight: 600;
+		text-transform: uppercase;
+		padding: 14px 30px;
+		color: #484848;
+		line-height: 1;
+	}
+	.nav-link.active {
+		background-color: #f42267;
+		box-shadow: 0 4px 16px rgba(0,0,0,.35);
+	}
+}
+
+.btn-shadow {
+	box-shadow: 0 10px 0 #ff5990;
+	border-radius: 10px;
+	padding: 12px 25px;
+	transition: all .2s cubic-bezier(.64,.28,.48,.99);
+	&:hover {
+		color: #fff;
+		box-shadow: 0 10px 0 #ff3f7f;
+		background-color: #da1757;
+	}
+}
+
+
+
 
 
 /* Large Devices, Wide Screens */
