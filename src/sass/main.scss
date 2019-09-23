@@ -125,9 +125,35 @@ button:active, button:focus {
 	}
 }
 
+/* ============================= section Progress ============================== */
 
-
-
+.section-progress {
+	background-color: #4b2d7f;
+	color: #fff;
+	font-size: 15px;
+	padding: 0;
+	.progress-item {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		transition: all .5s;
+		&:hover {
+			background-color: #40286a;
+		}
+	}
+	.num {
+		font-size: 50px;
+		font-weight: 600;
+		margin: 30px 0 20px;
+	}
+	h4 {
+		font-size: 30px;
+		height: 72px;
+		overflow: hidden;
+	}
+	i {
+		font-size: 70px;
+	}
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -173,6 +199,12 @@ button:active, button:focus {
 		}
 		h4 {
 			font-size: 38px;
+		}
+	}
+	.section-progress {
+		.progress-item {
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 	}
 }
