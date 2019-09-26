@@ -52,7 +52,7 @@ function htmls() {
 }
 
 function images() {
-  return gulp.src(paths.src + 'img/*.{jpg,jpeg,png,gif,svg}')
+  return gulp.src(paths.src + 'img/**/*.{jpg,jpeg,png,gif}')
     .pipe(imagemin())
     .pipe(gulp.dest(paths.build + 'img/'));
 }
@@ -94,6 +94,7 @@ function scriptsVendors() {
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'node_modules/popper.js/dist/umd/popper.min.js',
+		'node_modules/baguettebox.js/dist/baguettebox.min.js'
 		])
     .pipe(concat('vendors.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
