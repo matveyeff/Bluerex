@@ -234,6 +234,43 @@ button:active, button:focus {
 	background-color: #4b2d7f;
 }
 
+/* ============================= section Reviews ============================== */
+
+.section-reviews {
+	background: url(../img/reviews_bg.jpg) center / cover no-repeat;
+	padding-top: 20px;
+	padding-bottom: 0;
+	.carousel-caption {
+		top: 5%;
+		bottom: auto;
+		text-align: left;
+	}
+	.blockquote {
+		font-style: italic;
+		font-weight: 500;
+		font-size: 22px;
+		position: relative;
+		padding-left: 40px;
+		margin-top: 70px;
+		&::before {
+			content: '“';
+			float: left;
+			font-family: $text;
+			font-size: 150px;
+			font-weight: 300;
+			font-style: italic;
+			color: #f42267;
+			position: absolute;
+			top: -80px;
+			left: -33px;
+		}
+	}
+	.blockquote-footer {
+		margin-top: 10px;
+	}
+}
+
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
