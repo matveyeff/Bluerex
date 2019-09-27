@@ -270,6 +270,47 @@ button:active, button:focus {
 	}
 }
 
+/* ============================= section Form ============================== */
+
+.section-form {
+	background: url(../img/form_bg.jpg) center / cover no-repeat;
+	color: #fff;
+	h5 {
+		font-size: 30px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	form {
+		margin-top: 50px;
+	}
+	.btn-violet {
+		background-color: #4b2d7f;
+	}
+	.form-control {
+		height: 51px;
+		background-color: rgba(255,255,255,.35);
+		color: #fff;
+		border: 0;
+		border-radius: 10px;
+		padding: 0 40px;
+		margin-bottom: 20px;
+		&::placeholder {
+			color: #fff;
+		}
+		&:focus {
+			box-shadow: 0 0 0 .2rem rgba(255,255,255,.25);
+		}
+	}
+}
+
+.btn-violet.btn-shadow {
+		box-shadow: 0 7px 0 #a57ee9;
+		&:hover {
+			background: #3a2362;
+			box-shadow: 0 5px 0 #a57ee9;
+		}
+}
+
 
 
 /* Large Devices, Wide Screens */
@@ -291,6 +332,20 @@ button:active, button:focus {
 	}
 	section {
 		padding: 50px 0;
+	}
+	.section-reviews {
+		h3, h4 {
+			font-size: 25px;
+		}
+		.blockquote {
+			font-size: 17px;
+			padding-left: 20px;
+			margin-top: 40px;
+			&::before {
+				font-size: 100px;
+				top: -40px;
+			}
+		}
 	}
 }
 
@@ -343,6 +398,16 @@ button:active, button:focus {
 	}
 	.btn-shadow {
 		padding: 10px 15px;
+	}
+}
+
+@media only screen and (max-width : 576px) {
+	.section-reviews {
+		.carousel-caption {
+			position: static;
+			width: 70%;
+			margin: auto;
+		}
 	}
 }
 
