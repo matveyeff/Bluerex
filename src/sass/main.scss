@@ -311,6 +311,60 @@ button:active, button:focus {
 		}
 }
 
+/* ============================= section Footer ============================== */
+
+.footer {
+	background: url(../img/world-map.png) center / cover no-repeat;
+	padding: 100px 0;
+	h5 {
+		font-size: 25px;
+		color: #4b2d7f;
+		font-weight: 700;
+	}
+	ul {
+		list-style: none;
+		padding-left: 10px;
+		li a {
+			font-size: 15px;
+			font-weight: 600;
+			color: #171717;
+		}
+	}
+}
+
+.footer-images {
+	img {
+		margin-bottom: 20px;
+		border-radius: 15px;
+	}
+}
+
+.copyright {
+	background-color: #f6f6f6;
+	padding: 25px 0;
+	a, span {
+		color: #171717;
+		font-size: 18px;
+		font-weight: 600;
+		position: relative;
+		&::after {
+			content: '\00B7';
+			position: absolute;
+			right: -3px;
+		}
+	}
+	li:last-child a {
+		&::after {
+			content: '';
+		}
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 
 
 /* Large Devices, Wide Screens */
@@ -330,8 +384,11 @@ button:active, button:focus {
 	.main-header-content {
 		background-color: rgba(0,0,0,.2);
 	}
-	section {
+	section, .footer {
 		padding: 50px 0;
+	}
+	.copyright {
+		padding: 25px 0;
 	}
 	.section-reviews {
 		h3, h4 {
@@ -379,6 +436,7 @@ button:active, button:focus {
 			padding-bottom: 40px;
 		}
 	}
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -444,6 +502,11 @@ button:active, button:focus {
 		}
 		h4 {
 			font-size: 32px;
+		}
+	}
+	.copyright {
+		a, span {
+			font-size: 16px;
 		}
 	}
 }
