@@ -3,6 +3,19 @@
   <head>
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<style>
+			.preloader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 9999;
+				background-color: #fefefe;
+			}
+		</style>
+
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.min.css">
     <title>Creative Agency</title>
@@ -570,6 +583,12 @@
 		<button class="scrollToTop">
 			<i class="fas fa-angle-up"></i>
 		</button>
+
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="spinner-border text-danger" style="width: 7rem; height: 7rem;" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
 
     <script src="js/vendors.min.js"></script>
     <script src="js/script.min.js"></script>
